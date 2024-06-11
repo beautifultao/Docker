@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: centos7
 
     steps:
     - name: Git pull
@@ -27,4 +27,4 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/hslr/sun-panel:1.4.0 docker://registry.cn-hangzhou.aliyuncs.com/weiyigeek/sun-panel:1.4.0
+         skopeo copy docker://docker.io/library/mongo:5.0.27 docker://registry.cn-hangzhou.aliyuncs.com/your-aliyun-repo/mongo:5.0.27
