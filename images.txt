@@ -1,1 +1,1 @@
-redis:7.4-rc-alpine3.20
+apache/dubbo-admin:0.6.0
